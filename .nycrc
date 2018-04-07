@@ -6,6 +6,7 @@
   "instrument": false,
   "reporter": [
     "lcov",
+    "text-lcov",
     "html",
     "text-summary",
     "text"
