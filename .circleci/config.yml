@@ -23,11 +23,8 @@ jobs:
       - run:
           name: build
           command: yarn build
-      - run:
-          name: code-coverage
-          command: yarn coverage
       - store_artifacts:
           path: coverage
           prefix: coverage
       - store_test_results:
-          path: coverage/cobertura-coverage.xml
+          path: coverage/lcov.info
