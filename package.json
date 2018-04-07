@@ -5,5 +5,21 @@
   "main": "dist/index.js",
   "repository": "https://github.com/jphilipstevens/rest-express-skeleton.git",
   "author": "jonathan.philip.stevens@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc mocha",
+    "compile": "babel src --out-dir dist --source-maps inline",
+    "prebuild": "npm run test",
+    "build": "npm run compile"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "nyc": "^11.6.0"
+  }
 }

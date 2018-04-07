@@ -1,0 +1,24 @@
+{
+  "require": [
+    "babel-register"
+  ],
+  "sourceMap": false,
+  "instrument": false,
+  "reporter": [
+    "lcov",
+    "html",
+    "text-summary",
+    "text"
+  ],
+  "exclude": [
+    "lib/browser",
+    "test/**/*"
+  ],
+  "watermarks": {
+    "lines": [99, 100],
+    "branches": [99, 100],
+    "functions": [99, 100],
+    "statements": [99, 100]
+  },
+  "all": true
+}
