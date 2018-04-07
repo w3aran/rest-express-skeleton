@@ -1,4 +1,5 @@
 {
+  "all": true,
   "require": [
     "babel-register"
   ],
@@ -6,9 +7,9 @@
   "instrument": false,
   "reporter": [
     "lcov",
-    "html",
     "text-summary",
-    "text"
+    "text",
+    "cobertura"
   ],
   "exclude": [
     "lib/browser",
@@ -19,6 +20,5 @@
     "branches": [99, 100],
     "functions": [99, 100],
     "statements": [99, 100]
-  },
-  "all": true
+  }
 }
