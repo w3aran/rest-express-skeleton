@@ -7,7 +7,7 @@
   "author": "jonathan.philip.stevens@gmail.com",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test nyc mocha",
+    "test": "NODE_ENV=test nyc mocha --reporter mocha-junit-reporter",
     "compile": "babel src --out-dir dist --source-maps inline",
     "prebuild": "npm run test",
     "build": "npm run compile"
@@ -20,6 +20,7 @@
     "babel-preset-es2017": "^6.24.1",
     "chai": "^4.1.2",
     "mocha": "^5.0.5",
+    "mocha-junit-reporter": "^1.17.0",
     "nyc": "^11.6.0"
   }
 }
