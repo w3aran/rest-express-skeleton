@@ -23,8 +23,17 @@ jobs:
       - run:
           name: build
           command: yarn build
+      - run: mkdir ~/junit
+      - run:
+          name: unit test for test
+          command: ./node_modules/.bin/mocha test --reporter mocha-junit-reporter
+          environment:
+            MOCHA_FILE: junit/test-results.xml
+          when: always
+      - store_test_results:
+          path: ~/junit
+      - store_artifacts:
+          path: ~/junit 
       - store_artifacts:
           path: coverage
           prefix: coverage
-      - store_test_results:
-          path: test-results.xml
