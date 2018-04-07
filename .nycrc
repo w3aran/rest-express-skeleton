@@ -8,8 +8,7 @@
   "reporter": [
     "lcov",
     "text-summary",
-    "text",
-    "cobertura"
+    "text"
   ],
   "extension": [
       ".js"
