@@ -1,0 +1,9 @@
+{
+  "name": "rest-express-skeleton",
+  "version": "1.0.0",
+  "description": "A skeleton project for bootstrapping new REST servers",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jphilipstevens/rest-express-skeleton.git",
+  "author": "jonathan.philip.stevens@gmail.com",
+  "license": "MIT"
+}
