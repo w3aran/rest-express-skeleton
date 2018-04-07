@@ -27,7 +27,7 @@ jobs:
           path: coverage
           prefix: coverage
       - store_test_results:
-          path: ~/junit
+          path: ./junit
       - store_artifacts:
-          path: ~/junit          
+          path: ./junit          
 
