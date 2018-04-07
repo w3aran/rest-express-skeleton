@@ -23,5 +23,8 @@ jobs:
       - run:
           name: build
           command: yarn build
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
       - store_test_results:
-          - "./coverage/lcov-report/"
+          - coverage/lcov-report/
