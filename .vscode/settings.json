@@ -1,0 +1,9 @@
+{
+  "window.title": "${activeEditorMedium}",
+  "prettier.eslintIntegration": true,
+  "search.exclude": {
+    "dist/**": true,
+    "build/**": true
+  },
+  "debug.inlineValues": true
+}
