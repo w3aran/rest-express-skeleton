@@ -24,10 +24,10 @@ jobs:
           name: build
           command: yarn build
       - store_artifacts:
-          path: coverage
+          path: ./build/reports/coverage
           prefix: coverage
       - store_test_results:
-          path: ./junit
+          path: ./build/reports/test
       - store_artifacts:
-          path: ./junit          
+          path: ./build/reports/test         
 
