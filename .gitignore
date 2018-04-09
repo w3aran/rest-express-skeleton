@@ -60,5 +60,5 @@ typings/
 # build folder
 dist
 
-# junit mocha test results
-junit/
+# unit test and coverage reports
+build

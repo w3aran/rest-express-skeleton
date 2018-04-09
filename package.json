@@ -7,6 +7,7 @@
   "author": "jonathan.philip.stevens@gmail.com",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "test": "NODE_ENV=test MOCHA_FILE=./build/reports/test/junit.xml nyc mocha --reporter mocha-junit-reporter",
     "compile": "babel src --out-dir dist --source-maps inline",
     "prebuild": "npm run test",

@@ -21,6 +21,9 @@ jobs:
                 paths:
                     - node_modules/
             - run:
+                name: Run Static Analysis Test
+                command: yarn lint
+            - run:
                 name: Run Unit Tests and Build
                 command: yarn build
             - store_test_results:
