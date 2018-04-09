@@ -25,5 +25,6 @@
     "functions": [99, 100],
     "statements": [99, 100]
   },
-  "report-dir": "./build/reports/coverage"
+  "report-dir": "./build/reports/coverage",
+  "temp-directory": "./build/tmp/.nyc_output"
 }
